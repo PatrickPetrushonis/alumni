@@ -1,17 +1,40 @@
 {
   "name": "alumni-website",
   "version": "1.0.0",
-  "description": "website for bridgeport hospital school of nursing alumni",
-  "main": "index.js",
+  "description": "Website for bridgport hospital school of nursing alumni",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
   },
-  "author": "Patrick Petrushonis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickPetrushonis/alumni.git"
+  },
+  "keywords": [
+    "web",
+    "gulp",
+    "sass",
+    "nunjucks"
+  ],
+  "author": "Patrick Petrushonis <pwp904@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatrickPetrushonis/alumni.git/issues"
+  },
+  "homepage": "https://github.com/PatrickPetrushonis/alumni.git#readme",
   "devDependencies": {
-    "browser-sync": "^2.11.2",
+    "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-include": "^2.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^1.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "minimatch": "^3.0.2"
   }
 }
