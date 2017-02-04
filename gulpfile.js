@@ -110,6 +110,21 @@ gulp.task('nunjucks', function() {
     .pipe(sync.reload({ stream: true }))  
 });
 
+// Move all pdf files to app location
+gulp.task('pdf', function() {
+  // Identify location of nunjucks partials
+  //render.nunjucks.configure([config.src + 'templates/']);
+
+  // Get all html and nunjucks files in pages
+  return gulp.src(config.src + 'pages/**/*.pdf')
+    .pipe(customPlumber('Error Running PDF'))
+    //.pipe(render({data: {masterlayout: 'layout.nunjucks'}}))
+    .pipe(gulp.dest(''))
+    .pipe(notify({ message: 'PDFs Complete!', onLast: true }))
+    // Tells browser sync to reload files when task is done
+    .pipe(sync.reload({ stream: true }))  
+});
+
 // Minify all images
 gulp.task('images', function() {
   return gulp.src(config.src + 'img/**/*')
@@ -133,4 +148,4 @@ gulp.task('watch', function(){
 });
 
 // Executes a sequence of tasks
-gulp.task('default', ['images', 'scripts', 'sass', 'nunjucks', 'sync', 'watch']);
+gulp.task('default', ['images', 'scripts', 'sass', 'nunjucks', 'pdf', 'sync', 'watch']);
