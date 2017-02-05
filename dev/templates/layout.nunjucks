@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="page-top" class="main__container">
-    {{ global.header() }}
+    {{ global.header(relative_path) }}
     {{ global.nav(relative_path) }}
     <div class="main__content">
       {% block content %} {% endblock %}

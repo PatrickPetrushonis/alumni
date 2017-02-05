@@ -1,7 +1,7 @@
-{% macro header() %}
+{% macro header(rel_path) %}
 
 <div class="header__container">
-  <h2>BHSNAA1</h2>
+  <h2><a href="{{ rel_path }}index.html">BHSNAA1</a></h2>
 </div>
 
 {% endmacro %}

@@ -14,4 +14,16 @@
 	height: calc(100vh - #{$banner-height * 2} - 44px);
 	overflow: auto;
 	background: color(primary, light);
+
+	h1,
+	h2 {
+		color: color(primary, dark);
+		text-align: center;
+	}
+
+	p,
+	ol,
+	span {
+		color: color(gray, jet);
+	}
 }
