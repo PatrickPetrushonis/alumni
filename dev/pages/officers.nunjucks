@@ -1,0 +1,39 @@
+{% set pagename = "Officers - BHSNAA1" %}
+{% set relative_path = "" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+	<h2>Officers of the Board</h2>
+	<div class="officer__card">
+		<span>President: Mary Toohey-Repko (203)378-9783 <a href="mailto:mizmare@aol.com">e-mail</a></span>
+	</div>
+	<div class="officer__card">
+		<span>Vice-President: Cathy Nucera (203)452-9618</span>
+	</div>
+	<div class="officer__card">
+		<span>Secretary: Dorothy Connolly</span>
+	</div>
+	<div class="officer__card">
+		<span>Treasurer: Debi Petrushonis (203)924-9175 <a href="mailto:DebPTreas@juno.com">e-mail</a></span>
+	</div>
+
+	<h2>Board Members</h2>
+	<div class="board__card">
+		<span>Edi Poidomani</span>
+	</div>
+	<div class="board__card">
+		<span>Caren Silhavey <a href="mailto:silhavey@att.net">e-mail</a></span>
+	</div>
+	<div class="board__card">
+		<span>Beverly Tamas</span>
+	</div>
+	<div class="board__card">
+		<span>Susan Dematteo</span>
+	</div>
+	<div class="board__card">
+		<span>Linda Podolak</span>
+	</div>
+
+{% endblock %}

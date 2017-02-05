@@ -5,7 +5,7 @@
 <head>
   <title>{{ pagename }}</title>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="app/css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="{{ relative_path }}app/css/main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   <div id="page-top" class="main__container">
@@ -16,6 +16,6 @@
     </div>
     {{ global.footer() }}
   </div>
-  <footer><script src="app/js/main.js"></script></footer>
+  <footer><script src="{{ relative_path }}app/js/main.js"></script></footer>
 </body>
 </html>

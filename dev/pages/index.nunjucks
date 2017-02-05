@@ -1,4 +1,5 @@
 {% set pagename = "Bridgeport Hospital School of Nursing Alumnae Association I" %}
+{% set relative_path = "" %}
 
 {% extends "layout.nunjucks" %}
 

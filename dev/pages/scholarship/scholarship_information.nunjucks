@@ -1,42 +1,9 @@
+{% set pagename = "Scholarship - BHSNAA1" %}
+{% set relative_path = "../" %}
 
+{% extends "layout.nunjucks" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Scholarship - BHSNAA1</title>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../app/css/main.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-  <div id="page-top" class="main__container">
-    
-
-<div class="header__container">
-  <h2>BHSNAA1</h2>
-</div>
-
-
-    
-
-<div class="nav__container">
-
-<ul class="nav__items">
-  <li><a href="index.html">Main Page</a></li>
-  <li><a href="officers.html">Officers</a></li>
-  <li><a href="newsletters/newsletter_12-2015.pdf" target="_blank">NewsLetter</a></li>
-  <li><a href="application/application_for_AA1.pdf" target="_blank">Application for AA1</a></li>
-  <li><a href="scholarship/scholarship_information.html">Scholarship Information</a></li>
-  <li><a href="scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a></li>
-  <li><a href="bylaws/bylaws_01.html">Bylaws</a></li>
-  <li><a href="bylaws/BHSN_alumnae_bylaws_2012.pdf" target="_blank">Bylaws PDF</a></li>
-  <li><a href="newsletters/newsletter_archives.html">Newsletter Archives</a></li>
-</ul>
-
-</div>
-
-
-    <div class="main__content">
-      
+{% block content %}
 
 	<p align="center">Guidelines for:<br />
 	The Bridgeport Hospital School of Nursing Alumnae Association I, Inc.<br />
@@ -58,17 +25,4 @@
 
 	<p>Scholarship committee: Caren Silhavey (chairman), Edi Poidomani, Linda Podolak, Dottie Connelly, and Cathy Nucera.</p>
 
-
-    </div>
-    
-  
-<div class="footer__container">
-  <div class="footer__info">
-  </div> 
-</div>
-
-
-  </div>
-  <footer><script src="../app/js/main.js"></script></footer>
-</body>
-</html>
+{% endblock %}

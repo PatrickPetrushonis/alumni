@@ -10,6 +10,8 @@
 	position: absolute;
 	top: $banner-height;
 	left: $nav-width;
+	width: calc(100% - #{$nav-width} - 44px);
 	height: calc(100vh - #{$banner-height * 2} - 44px);
+	overflow: auto;
 	background: color(primary, light);
 }

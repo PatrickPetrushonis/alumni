@@ -1,0 +1,11 @@
+{% set pagename = "News - BHSNAA1" %}
+{% set relative_path = "" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+	<h1>There is no new news today.</h1>
+	<h1>Thank you</h1>
+
+{% endblock %}
