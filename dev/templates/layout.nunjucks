@@ -1,0 +1,22 @@
+{% import '../templates/partials/global.nunjucks' as global %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ pagename }}</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background:#ff7bc9">
+  <div id="page-top" class="main-container">
+    {{ global.header() }}
+    {{ global.nav() }}
+
+    <div class="main-content">
+      {% block content %} {% endblock %}
+    </div>
+
+    {{ global.footer() }}
+  </div>
+  
+</body>
+</html>

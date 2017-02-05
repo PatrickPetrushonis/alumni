@@ -1,0 +1,53 @@
+{% macro header() %}
+
+<div></div>
+
+{% endmacro %}
+
+
+{% macro nav() %}
+
+<div style="background:url('app/img/blue.gif) repeat; color:#ffffff; text-align:center;">
+
+<h2>BHSNAA1</h2>
+
+<hr>
+
+<a href="index.html">Main Page</a><br>
+<a href="officers.html">Officers</a><br>
+<a href="newsletters/newsletter_12-2015.pdf" target="_blank">NewsLetter</a><br>
+<a href="application/application_for_AA1.pdf" target="_blank">Application for AA1</a><br>
+<a href="scholarship/scholarship_information.html">Scholarship Information</a><br>
+<a href="scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a><br>
+<a href="bylaws/bylaws_01.html">Bylaws</a><br>
+<a href="bylaws/BHSN_alumnae_bylaws_2012.pdf" target="_blank">Bylaws PDF</a><br>
+<a href="newsletters/newsletter_archives.html">Newsletter Archives</a>
+
+<hr>
+
+</div>
+
+{% endmacro %}
+
+
+{% macro footer() %}
+  
+<div class="footer__container">  
+  <a href="index.html">Main Page</a><br>
+  <a href="officers.html">Officers</a><br>
+  <a href="newsletters/newsletter_12-2015.pdf" target="_blank">NewsLetter</a><br>
+  <a href="application/application_for_AA1.pdf" target="_blank">Application for AA1</a><br>
+  <a href="scholarship/scholarship_information.html">Scholarship Information</a><br>
+  <a href="scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a><br>
+  <a href="bylaws/bylaws_01.html">Bylaws</a><br>
+  <a href="bylaws/BHSN_alumnae_bylaws_2012.pdf" target="_blank">Bylaws PDF</a><br>
+  <a href="newsletters/newsletter_archives.html">Newsletter Archives</a>
+  <div>
+    <table style="margin:0 auto; text-align:center;" width="189">
+      <tr><td>Comments or Questions</td></tr>
+      <tr><td>e-mail <a href="mailto:pagemaster@email.com">Webmaster</a></td></tr>
+    </table>
+  </div>
+</div>
+
+{% endmacro %}
