@@ -77,7 +77,7 @@ gulp.task('scripts', function(){
 
 // Compile all sass into css
 gulp.task('sass', function() {
-  return gulp.src(config.src + 'scss/**/*.scss')
+  return gulp.src(config.src + 'scss/main.scss')
     .pipe(customPlumber('Error Running Sass'))
     // Initialize sourcemaps
     .pipe(maps.init())

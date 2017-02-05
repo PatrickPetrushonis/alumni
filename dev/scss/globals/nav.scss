@@ -1,0 +1,36 @@
+.nav__container {
+	padding: $banner-height 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: $nav-width;
+	
+	//background: color(secondary, dark);
+	color: color(gray, light);
+}
+
+.nav__items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		height: 44px;
+
+		&:hover {
+			background: color(secondary, light);
+		}
+	}
+
+	li a {
+		padding: 0 11px;
+		display: block;	
+		line-height: 44px;
+		text-decoration: none;
+		color: color(gray, light);
+
+		&:hover {
+			//text-decoration: underline;
+		}
+	}
+}

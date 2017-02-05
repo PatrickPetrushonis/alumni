@@ -1,0 +1,29 @@
+
+// Colors accessible via nested maps
+$color-map: (
+    primary: (
+        light   : #bf5c76,
+        mid     : #a7415c,
+        dark    : #823348
+    ),
+    secondary: (
+        light   : #415ca7,
+        dark    : #334882
+    ),
+    gray: (     
+        light   : #f5f5f5,
+        mild    : #bdbdbd,
+        mid     : #616161,
+        dark    : #424242,
+        jet     : #212121
+    ),
+);
+
+// Element sizes
+$nav-width: 250px;
+$banner-height: 66px;
+
+// Media query upper sizes
+$small-screen: 768px;
+$medium-screen: 1024px;
+$large-screen: 1366px;

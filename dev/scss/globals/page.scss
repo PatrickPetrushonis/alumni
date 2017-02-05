@@ -1,0 +1,15 @@
+.main__container {
+	position: relative;
+	height: 100%;
+	min-height: 100vh;
+	background: color(secondary, dark);
+}
+
+.main__content {
+	padding: 22px;
+	position: absolute;
+	top: $banner-height;
+	left: $nav-width;
+	height: calc(100vh - #{$banner-height * 2} - 44px);
+	background: color(primary, light);
+}

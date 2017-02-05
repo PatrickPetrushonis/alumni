@@ -5,18 +5,17 @@
 <head>
   <title>{{ pagename }}</title>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="app/css/main.css" rel="stylesheet" type="text/css"/>
 </head>
-<body style="background:#ff7bc9">
-  <div id="page-top" class="main-container">
+<body>
+  <div id="page-top" class="main__container">
     {{ global.header() }}
     {{ global.nav() }}
-
-    <div class="main-content">
+    <div class="main__content">
       {% block content %} {% endblock %}
     </div>
-
     {{ global.footer() }}
   </div>
-  
+  <footer><script src="app/js/main.js"></script></footer>
 </body>
 </html>
