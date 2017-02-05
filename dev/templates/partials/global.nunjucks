@@ -7,20 +7,20 @@
 {% endmacro %}
 
 
-{% macro nav() %}
+{% macro nav(rel_path) %}
 
 <div class="nav__container">
 
 <ul class="nav__items">
-  <li><a href="{{ relative_path }}index.html">Main Page</a></li>
-  <li><a href="{{ relative_path }}officers.html">Officers</a></li>
-  <li><a href="{{ relative_path }}newsletters/newsletter_12-2015.pdf" target="_blank">NewsLetter</a></li>
-  <li><a href="{{ relative_path }}application/application_for_AA1.pdf" target="_blank">Application for AA1</a></li>
-  <li><a href="{{ relative_path }}scholarship/scholarship_information.html">Scholarship Information</a></li>
-  <li><a href="{{ relative_path }}scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a></li>
-  <li><a href="{{ relative_path }}bylaws/bylaws_01.html">Bylaws</a></li>
-  <li><a href="{{ relative_path }}bylaws/BHSN_alumnae_bylaws_2012.pdf" target="_blank">Bylaws PDF</a></li>
-  <li><a href="{{ relative_path }}newsletters/newsletter_archives.html">Newsletter Archives</a></li>
+  <li><a href="{{ rel_path }}index.html">Main Page</a></li>
+  <li><a href="{{ rel_path }}officers.html">Officers</a></li>
+  <li><a href="{{ rel_path }}newsletters/newsletter_12-2015.pdf" target="_blank">NewsLetter</a></li>
+  <li><a href="{{ rel_path }}application/application_for_AA1.pdf" target="_blank">Application for AA1</a></li>
+  <li><a href="{{ rel_path }}scholarship/scholarship_information.html">Scholarship Information</a></li>
+  <li><a href="{{ rel_path }}scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a></li>
+  <li><a href="{{ rel_path }}bylaws/bylaws_01.html">Bylaws</a></li>
+  <li><a href="{{ rel_path }}bylaws/BHSN_alumnae_bylaws_2012.pdf" target="_blank">Bylaws PDF</a></li>
+  <li><a href="{{ rel_path }}newsletters/newsletter_archives.html">Newsletter Archives</a></li>
 </ul>
 
 </div>
