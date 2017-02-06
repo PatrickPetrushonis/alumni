@@ -1,13 +1,11 @@
 .header__container {
 	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
+	padding: 0 0 0 $nav-width;
 	width: calc(100% - #{$nav-width});
 	height: 66px;
 	overflow: hidden;
 	text-align: center;
+	background: color(secondary, dark);
 	color: color(gray, light);
 
 	a {
