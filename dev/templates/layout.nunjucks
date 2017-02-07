@@ -12,7 +12,9 @@
     {{ global.header(relative_path) }}
     {{ global.nav(relative_path) }}
     <div class="main__content">
-      {% block content %} {% endblock %}
+      <div class="main__content--centered">
+        {% block content %} {% endblock %}
+      </div>
     </div>
     {{ global.footer() }}
   </div>

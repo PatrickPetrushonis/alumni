@@ -9,7 +9,7 @@
 	flex: 1 0 250px;
 	font-size: 18px;
 	text-align: center;
-	background: color(gray, light);
+	background: rgba(color(gray, light), 0.5);
 	border-radius: 3px;
 }
 
@@ -55,7 +55,8 @@
 
 .card__officer--email,
 .card__board--email {
-	padding: 11px 22px;
+	margin: 11px 0 0;
+	padding: 5.5px 22px;
 	display: inline-block;
 	border: 1px solid color(secondary, light);
 	border-radius: 3px;

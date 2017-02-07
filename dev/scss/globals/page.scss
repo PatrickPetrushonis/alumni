@@ -7,18 +7,24 @@
 
 .main__content {
 	margin: 0 0 88px $nav-width;
+	width: calc(100% - #{$nav-width} - 44px);	
+}
+
+.main__content--centered {
+	margin: 0 auto;	
 	padding: 22px;
-	width: calc(100% - #{$nav-width} - 44px);
+	max-width: 1280px;
 
 	h1,
 	h2 {
-		color: color(primary, dark);
 		text-align: center;
+		color: color(primary, dark);
 	}
 
 	p,
 	ol,
 	span {
+		font-size: 18px;
 		color: color(gray, jet);
 	}
 }
