@@ -1,4 +1,4 @@
-{% set pagename = "News - BHSNAA1" %}
+{% set pagename = "Newsletters - BHSNAA1" %}
 {% set relative_path = "../" %}
 
 {% extends "layout.nunjucks" %}
