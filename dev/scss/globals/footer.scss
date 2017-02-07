@@ -2,8 +2,10 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: calc(100% - #{$nav-width});
+	width: 100%;
 	height: $banner-height;
 	text-align: center;
 	background: color(secondary, dark);
+
+	@include breakpoint($small-screen) { width: calc(100% - #{$nav-width}); }
 }

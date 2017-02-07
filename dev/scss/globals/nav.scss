@@ -6,9 +6,16 @@
 	width: $nav-width;
 	min-height: 100vh;
 	height: 100%;
+	transform: translateX(-100%);
+	z-index: 1000;
 	
 	background: color(secondary, dark);
 	color: color(gray, light);
+	transform: 1s all ease-out;
+
+	&.nav__visible { left: $nav-width; }
+
+	@include breakpoint($small-screen) { transform: translateX(0%); }
 }
 
 .nav__items {

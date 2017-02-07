@@ -6,8 +6,13 @@
 }
 
 .main__content {
-	margin: 0 0 88px $nav-width;
-	width: calc(100% - #{$nav-width});	
+	margin: 0 0 88px;
+	width: 100%;
+
+	@include breakpoint($small-screen) {
+		margin: 0 0 88px $nav-width;
+		width: calc(100% - #{$nav-width});
+	}
 }
 
 .main__content--centered {
@@ -26,24 +31,8 @@
 		margin: 0 0 22px;
 		padding: 0;
 		display: block;
-		position: relative;
-		height: 1px;
-
 		border: 0;
 		border-top: 4px solid color(primary, light);
-
-		 &:after {
-		 	display: inline-block;
-			position: absolute;
-			top: -11px;
-			right: calc(50% - 11px);
-			width: 22px;
-			height: 22px;
-
-			content: "";
-			//background: url('../img/rule-' + $name + '.png') center no-repeat;
-			background-size: cover;
-		}
 	}
 
 	p,

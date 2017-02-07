@@ -1,7 +1,7 @@
 .header__container {
 	margin: 0;
-	padding: 0 0 0 $nav-width;
-	width: calc(100% - #{$nav-width});
+	padding: 0;
+	width: 100%;
 	height: 66px;
 	overflow: hidden;
 	text-align: center;
@@ -12,4 +12,62 @@
 		text-decoration: none;
 		color: color(gray, light);
 	}
+
+	@include breakpoint($small-screen) {
+		padding: 0 0 0 $nav-width;
+		width: calc(100% - #{$nav-width});
+	}
+}
+
+.header__nav-toggle {
+  margin: 21px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 24px;
+  z-index: 1001;
+
+  input[type="checkbox"] {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+
+    &:checked + span {
+      background: transparent;
+
+      &:before { transform: rotate(-45deg) translate(-4px, 12px); }
+      &:after { transform: rotate(45deg) translate(-1px, -8px); }
+    }
+  }
+
+  @include breakpoint($small-screen) { display: none; }
+}
+
+.nav-icon {
+  position: absolute;
+  top: 9.5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: color(gray, light);    
+
+  &:before, 
+  &:after {
+    position: absolute;
+  	left: 0;    
+    width: 100%;
+    height: 5px;
+    content: "";
+    background: color(gray, light);
+    transition: all 0.3s ease-out;
+  }
+
+  &:before { top: -9px; }
+  &:after { top: 9px; }
 }
