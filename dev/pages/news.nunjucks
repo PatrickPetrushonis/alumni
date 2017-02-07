@@ -5,7 +5,15 @@
 
 {% block content %}
 
-	<h1>There is no new news today.</h1>
-	<h1>Thank you</h1>
+	<h1>News from the Nursing Almanac 2016</h1>
+
+	<img src="{{ relative_path }}App/img/nursing_schools_almanac_2016.png">
+
+	<p>		
+		Great news for the Bridgeport Hospital School of Nursing. They are being recognized by the Nursing Schools Almanac 2016 ranking BHSN  as one of the best nursing school.
+	</p>
+	<p>
+		BHSN is being ranked as one of the top nursing programs; even in our rank of #31 - all schools before us are universities with multiple advanced programs and there is no other 2 year program ahead of us in the New England States and only one in the US ranking of all vocational 2-year programs (approx. 1900 and we're #2). This is outstanding and Alumnae Members should be proud. Many thanks to our faculty and staff at BHSN.
+	</p>
 
 {% endblock %}
