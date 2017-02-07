@@ -53,20 +53,22 @@
 	display: block;
 }
 
-.card__officer--email,
-.card__board--email {
+a.card__officer--email,
+a.card__board--email {
 	margin: 11px 0 0;
 	padding: 5.5px 11px;
 	display: inline-block;
 	border: 1px solid color(secondary, light);
 	border-radius: 3px;
-	text-decoration: none !important;
-	color: color(secondary, light) !important;
+	text-decoration: none;
+	background: color(gray, light);
+	color: color(secondary, light);
 	transition: 0.3s all linear;
 
 	&:hover {
+		text-decoration: none;
 		background: color(secondary, light);
-		color: color(gray, light) !important;
+		color: color(gray, light);
 	}
 }
 
