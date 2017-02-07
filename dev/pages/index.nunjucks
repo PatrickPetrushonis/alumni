@@ -10,11 +10,11 @@
 	<hr>
 
 	<p>
-		<span style="font-style:italic">The Bridgeport Hospital School of Nursing Alumnae Association I</span> has been in existence since 1906. Students who successfully complete their educational requirements at the school are eligible for membership in this professional organization at the time of graduation. Membership requires completion of an <a href="{{ relative_path }}application/application_for_AA1.pdf" target="_blank">application</a>, accompanied by payment of the Associations annual dues of ten dollars. Our Treasurer bills for renewal of membership in January of each year. 
+		<span style="font-style:italic">The Bridgeport Hospital School of Nursing Alumnae Association I</span> has been in existence since 1906. Students who successfully complete their educational requirements at the school are eligible for membership in this professional organization at the time of graduation. Membership requires completion of an <a href="{{ relative_path }}application_for_AA1.pdf" target="_blank">application</a>, accompanied by payment of the Associations annual dues of ten dollars. Our Treasurer bills for renewal of membership in January of each year. 
 	</p>
 
 	<p>
-		Per our <a href="{{ relative_path }}bylaws/bylaws.pdf" target="_blank">bylaws</a>, this Association meets twice a year, once in the spring (April) and again in the fall (September) of each year. Announcement of these meetings are made through our <a href="{{ relative_path }}newsletters/{{ current_newsletter }}.pdf">newsletter</a>, which is sent to all our active membership by mail or email. These dinner meetings consist of a business session and an educational program, presented by a professional speaker who educates the attendees regarding a current topic of interest and concern to Nurses. CEU programs have been offered at our meetings. 
+		Per our <a href="{{ relative_path }}bylaws.pdf" target="_blank">bylaws</a>, this Association meets twice a year, once in the spring (April) and again in the fall (September) of each year. Announcement of these meetings are made through our <a href="{{ relative_path }}newsletters/{{ current_newsletter }}.pdf" target="_blank">newsletter</a>, which is sent to all our active membership by mail or email. These dinner meetings consist of a business session and an educational program, presented by a professional speaker who educates the attendees regarding a current topic of interest and concern to Nurses. CEU programs have been offered at our meetings. 
 	</p>
 
 	<p>
