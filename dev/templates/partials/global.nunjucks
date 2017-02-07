@@ -18,11 +18,12 @@
 <ul class="nav__items">
   <li><a href="{{ rel_path }}index.html">Home</a></li>
   <li><a href="{{ rel_path }}news.html">News</a></li>
-  <li><a href="{{ rel_path }}newsletters/newsletter_archives.html" target="_blank">Newsletters</a></li>
+  <li><a href="{{ rel_path }}newsletters/newsletter_archives.html">Newsletters</a></li>
   <li><a href="{{ rel_path }}application_for_AA1.pdf" target="_blank">Application for AA1</a></li>
   <li><a href="{{ rel_path }}scholarship/scholarship_information.html">Scholarship Information</a></li>
-  <li><a href="{{ rel_path }}officers.html">Officers</a></li>
+  <li><a href="{{ rel_path }}scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a></li>
   <li><a href="{{ rel_path }}bylaws.pdf" target="_blank">Bylaws</a></li>
+  <li><a href="{{ rel_path }}officers.html">Officers</a></li>
 </ul>
 
 </div>
