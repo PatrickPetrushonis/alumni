@@ -13,9 +13,19 @@
 	color: color(gray, light);
 	transform: 1s all ease-out;
 
-	&.nav__visible { left: $nav-width; }
+	&.nav__visible { 
+		left: $nav-width;
+		box-shadow: 4px 0 8px 0 rgba(color(gray, jet), 0.5);
+	}
 
-	@include breakpoint($small-screen) { transform: translateX(0%); }
+	@include breakpoint($small-screen) { 
+		transform: translateX(0%); 
+
+		&.nav__visible { 
+			left: 0;
+			box-shadow: none;
+		}
+	}
 }
 
 .nav__items {
