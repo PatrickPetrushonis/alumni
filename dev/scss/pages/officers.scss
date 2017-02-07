@@ -6,7 +6,6 @@
 .card__officer,
 .card__board {
 	margin: 22px 11px 0;
-	flex: 1 0 200px;
 	font-size: 18px;
 	text-align: center;
 	background: rgba(color(primary, light), 0.5);
@@ -15,12 +14,14 @@
 
 .card__officer {
 	padding: 0 0 22px;
+	flex: 1 0 200px;
 	height: 180px; 
 }
 
 .card__board { 
 	padding: 44px 0 22px;
 	position: relative;
+	flex: 1 0 165px;
 	height: 80px; 
 
 	&:before {
@@ -57,18 +58,5 @@ a.card__officer--email,
 a.card__board--email {
 	margin: 11px 0 0;
 	padding: 5.5px 11px;
-	display: inline-block;
-	border: 1px solid color(secondary, light);
-	border-radius: 3px;
-	text-decoration: none;
-	background: color(gray, light);
-	color: color(secondary, light);
-	transition: 0.3s all linear;
-
-	&:hover {
-		text-decoration: none;
-		background: color(secondary, light);
-		color: color(gray, light);
-	}
 }
 

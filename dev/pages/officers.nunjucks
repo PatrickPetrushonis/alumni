@@ -12,7 +12,7 @@
 			<span class="card__officer--title">President</span>
 			<span class="card__officer--name">Mary Toohey-Repko</span>
 			<span class="card__officer--phone">(203) 378-9783</span>
-			<a class="card__officer--email" href="mailto:mizmare@aol.com">mizmare@aol.com</a>
+			<a class="card__officer--email button" href="mailto:mizmare@aol.com">mizmare@aol.com</a>
 		</div>
 		<div class="card__officer">
 			<span class="card__officer--title">Vice-President</span>
@@ -27,7 +27,7 @@
 			<span class="card__officer--title">Treasurer</span>
 			<span class="card__officer--name">Debi Petrushonis</span>
 			<span class="card__officer--phone">(203) 924-9175</span>
-			<a class="card__officer--email" href="mailto:DebPTreas@juno.com">debptreas@juno.com</a>
+			<a class="card__officer--email button" href="mailto:debptreas@juno.com">debptreas@juno.com</a>
 		</div>
 	</div>
 
@@ -39,7 +39,7 @@
 		</div>
 		<div class="card__board">
 			<span class="card__board--name">Caren Silhavey</span>
-			<a class="card__board--email" href="mailto:silhavey@att.net">silhavey@att.net</a>
+			<a class="card__board--email button" href="mailto:silhavey@att.net">silhavey@att.net</a>
 		</div>
 		<div class="card__board">
 			<span class="card__board--name">Beverly Tamas</span>
