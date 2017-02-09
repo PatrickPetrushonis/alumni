@@ -77,3 +77,20 @@ a.button {
 		color: color(gray, light);
 	}
 }
+
+.responsive {	
+	display: inline-block;
+	vertical-align: middle;
+
+	&.one-third {
+		width: 100%;
+
+		@include breakpoint($medium-screen) { width: 33%; }
+	}
+
+	&.two-third {
+		width: 100%;
+
+		@include breakpoint($medium-screen) { width: 66%; }
+	}
+}
