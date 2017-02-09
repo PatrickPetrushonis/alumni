@@ -66,31 +66,19 @@ a.button {
 	display: inline-block;
 	border: 1px solid color(secondary, light);
 	border-radius: 3px;
-	text-decoration: none;
+	text-decoration: none !important;
 	background: color(gray, light);
 	color: color(secondary, light);
 	transition: 0.3s all linear;
 
-	&:hover {
-		text-decoration: none;
+	&:not(.disabled):hover {
 		background: color(secondary, light);
 		color: color(gray, light);
 	}
-}
 
-.responsive {
-	display: inline-block;
-	vertical-align: middle;
-
-	&.one-third {
-		width: 100%;
-
-		@include breakpoint($medium-screen) { width: 33%; }
-	}
-
-	&.two-third {
-		width: 100%;
-
-		@include breakpoint($medium-screen) { width: 66%; }
+	&.disabled {
+		cursor: default;
+		background: color(gray, mild);
+		opacity: 0.5;
 	}
 }

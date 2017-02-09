@@ -8,3 +8,24 @@ body {
 
 .bold { font-weight: 700; }
 .italic { font-style: italic; }
+
+.center {
+	margin-right: auto !important;
+	margin-left: auto !important;
+	text-align: center !important;
+}
+
+.responsive {
+	display: inline-block;
+	vertical-align: middle;
+
+	&.one-third {
+		width: 100%;
+		@include breakpoint($medium-screen) { width: 33%; }
+	}
+
+	&.two-third {
+		width: 100%;
+		@include breakpoint($medium-screen) { width: 66%; }
+	}
+}
