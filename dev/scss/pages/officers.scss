@@ -22,7 +22,7 @@
 	padding: 44px 0 22px;
 	position: relative;
 	flex: 1 0 165px;
-	height: 80px; 
+	height: 120px; 
 
 	&:before {
 		display: block;
@@ -49,14 +49,16 @@
 
 .card__officer--name,
 .card__officer--phone,
-.card__board--name {
+.card__board--name,
+.card__board--phone {
 	margin: 0 0 11px;
 	display: block;
+	height: 22px;
 }
 
 a.card__officer--email,
 a.card__board--email {
 	margin: 11px 0 0;
 	padding: 5.5px 11px;
+	font-size: 14px;
 }
-

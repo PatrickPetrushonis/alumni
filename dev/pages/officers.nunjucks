@@ -12,48 +12,20 @@
 	<h2>Officers of the Board</h2>
 
 	<div class="card__container">
-		<div class="card__officer">
-			<span class="card__officer--title">President</span>
-			<span class="card__officer--name">Mary Toohey-Repko</span>
-			<span class="card__officer--phone">(203) 378-9783</span>
-			<a class="card__officer--email button" href="mailto:mizmare@aol.com">mizmare@aol.com</a>
-		</div>
-		<div class="card__officer">
-			<span class="card__officer--title">Vice-President</span>
-			<span class="card__officer--name">Cathy Nucera</span>
-			<span class="card__officer--phone">(203) 452-9618</span>
-		</div>
-		<div class="card__officer">
-			<span class="card__officer--title">Secretary</span>
-			<span class="card__officer--name">Dorothy Connolly</span>
-		</div>
-		<div class="card__officer">
-			<span class="card__officer--title">Treasurer</span>
-			<span class="card__officer--name">Debi Petrushonis</span>
-			<span class="card__officer--phone">(203) 924-9175</span>
-			<a class="card__officer--email button" href="mailto:debptreas@juno.com">debptreas@juno.com</a>
-		</div>
+		{{ global.card__officer('President', 'Mary Toohey-Repko', '(203) 378-9783', 'mizmare@aol.com') }}
+		{{ global.card__officer('Vice-President', 'Cathy Nucera', '(203) 452-9618', 'cathy.nucera@gmail.com') }}
+		{{ global.card__officer('Secretary', 'Dorothy Connolly', '(203) 922-8022', 'dotconn0119@gmail.com') }}
+		{{ global.card__officer('Treasurer', 'Debi Petrushoni', '(203) 924-9175', 'debptreas@juno.com') }}
 	</div>
 
 	<h2>Board Members</h2>
 
 	<div class="card__container">
-		<div class="card__board">
-			<span class="card__board--name">Edi Poidomani</span>
-		</div>
-		<div class="card__board">
-			<span class="card__board--name">Caren Silhavey</span>
-			<a class="card__board--email button" href="mailto:silhavey@att.net">silhavey@att.net</a>
-		</div>
-		<div class="card__board">
-			<span class="card__board--name">Beverly Tamas</span>
-		</div>
-		<div class="card__board">
-			<span class="card__board--name">Susan Dematteo</span>
-		</div>
-		<div class="card__board">
-			<span class="card__board--name">Linda Podolak</span>
-		</div>
+		{{ global.card__board('Edi Poidomani', '(203) 426-0833', 'edisr@sbcglobal.net') }}
+		{{ global.card__board('Caren Silhavey', '', 'silhavey@att.net') }}
+		{{ global.card__board('Beverly Tamas', '', '') }}
+		{{ global.card__board('Susan Dematteo', '', 'stamp73@comcast.net') }}
+		{{ global.card__board('Linda Podolak', '', 'linda_podolak@yahoo.com') }}		
 	</div>
 
 {% endblock %}

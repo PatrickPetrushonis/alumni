@@ -45,3 +45,24 @@
 <a class="button newsletter__button--{{ type | lower }}{% if path == 'javascript:void(0)' %} disabled{% endif %}" href="{{ path }}" target="_blank">{{ type | capitalize }}</a>
 
 {% endmacro %}
+
+{% macro card__officer(position, name, phone, email) %}
+
+<div class="card__officer">
+  <span class="card__officer--title">{{ position }}</span>
+  <span class="card__officer--name">{{ name }}</span>
+  <span class="card__officer--phone">{{ phone }}</span>
+  <a class="card__officer--email button" href="mailto:{{ email }}">{{ email }}</a>
+</div>
+
+{% endmacro %}
+
+{% macro card__board(name, phone, email) %}
+
+<div class="card__board">
+  <span class="card__board--name">{{ name }}</span>
+  <span class="card__board--phone">{{ phone }}</span>
+  {% if email %}<a class="card__board--email button" href="mailto:{{ email }}">{{ email }}</a>{% endif %}
+</div>
+
+{% endmacro %}
