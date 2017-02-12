@@ -1,0 +1,21 @@
+{% set pagename = "404 - BHSNAA1" %}
+{% set relative_path = "" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+	<h1>Error 404</h1>
+
+	<hr>
+
+	<div class="center">
+		<p>
+			Uh oh, looks like you took a wrong turn.
+		</p>
+
+		<a class="button" href="/">Try going here</a>
+	</div>
+
+
+{% endblock %}
