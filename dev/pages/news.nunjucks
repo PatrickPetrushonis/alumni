@@ -12,7 +12,7 @@
 	<h2>News from the Nursing Almanac 2016</h2>
 
 	<div class="responsive one-third">
-	<img src="{{ relative_path }}App/img/nursing_schools_almanac_2016.png">
+	<img src="{{ relative_path }}app/img/nursing_schools_almanac_2016.png">
 	</div>
 
 	<div class="responsive two-third">
