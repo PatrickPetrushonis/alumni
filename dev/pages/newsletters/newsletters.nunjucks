@@ -31,7 +31,7 @@
 		<h2>2013 Newsletters</h2>
 
 		{{ global.newsletter('newsletter_2013-8.pdf', 'Fall') }}
-		{{ global.newsletter('newsletter_2013-4.html', 'Spring') }}
+		{{ global.newsletter('newsletter_2013-3.pdf', 'Spring') }}
 
 		<h2>2012 Newsletters</h2>
 
@@ -40,7 +40,7 @@
 
 		<h2>2011 Newsletters</h2>
 
-		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+		{{ global.newsletter('newsletter_2011-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2011-3.pdf', 'Spring') }}
 
 		<h2>2010 Newsletters</h2>
@@ -50,7 +50,7 @@
 
 		<h2>2009 Newsletters</h2>
 
-		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+		{{ global.newsletter('newsletter_2009-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2009-3.pdf', 'Spring') }}
 
 		<h2>2008 Newsletters</h2>
@@ -76,7 +76,7 @@
 		<h2>2004 Newsletters</h2>
 
 		{{ global.newsletter('javascript:void(0)', 'Fall') }}
-		{{ global.newsletter('javascript:void(0)', 'Spring') }}
+		{{ global.newsletter('newsletter_2004-4.pdf', 'Spring') }}
 
 		<h2>2003 Newsletters</h2>
 
