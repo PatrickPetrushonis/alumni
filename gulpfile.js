@@ -145,6 +145,7 @@ gulp.task('watch', function(){
     config.src + 'pages/**/*.+(html|nunjucks)'], 
     ['nunjucks']
   );
+  gulp.watch(config.src + 'pages/**/*.pdf', ['pdf']);
 });
 
 // Executes a sequence of tasks
