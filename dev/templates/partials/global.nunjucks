@@ -16,7 +16,7 @@
 <div class="nav__container">
 
 <ul class="nav__items">
-  <li><a href="{{ rel_path }}index.html">Home</a></li>
+  <li><a href="/">Home</a></li>
   <li><a href="{{ rel_path }}news.html">News</a></li>
   <li><a href="{{ rel_path }}newsletters/newsletters.html">Newsletters</a></li>
   <li><a href="{{ rel_path }}application_for_AA1.pdf" target="_blank">Application for AA1</a></li>
