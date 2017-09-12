@@ -22,6 +22,7 @@
   <li><a href="{{ rel_path }}application_for_AA1.pdf" target="_blank">Application for AA1</a></li>
   <li><a href="{{ rel_path }}scholarship/scholarship_information.html">Scholarship Information</a></li>
   <li><a href="{{ rel_path }}scholarship/scholarship_application.pdf" target="_blank">Scholarship Application</a></li>
+  <li><a href="{{ rel_path }}bill_statement_2017.pdf" target="_blank">Bill Statement</a></li>
   <li><a href="{{ rel_path }}bylaws.pdf" target="_blank">Bylaws</a></li>
   <li><a href="{{ rel_path }}officers.html">Officers</a></li>
 </ul>
