@@ -1,17 +1,22 @@
 // Gulp plugins
 var gulp      = require('gulp');
 var prefix    = require('gulp-autoprefixer');
+var data      = require('gulp-data');
 var gulpIf    = require('gulp-if');
 var imagemin  = require('gulp-imagemin');
 var include   = require('gulp-include');
 var notify    = require('gulp-notify');
+var uglify    = require('gulp-uglify');
 var render    = require('gulp-nunjucks-render');
 var plumber   = require('gulp-plumber');
 var sass      = require('gulp-sass');
 var maps      = require('gulp-sourcemaps');
 
 // Other plugins
+var sequence  = require('run-sequence');
 var sync      = require('browser-sync');
+var del       = require('del');
+var fs        = require('fs');
 
 /** 
  * Commands:
@@ -22,6 +27,9 @@ var sync      = require('browser-sync');
  * gulp scripts
  * gulp watch
  */
+
+// Whether build is for testing or production
+var isProd = false;
 
 // Project build directories
 var config = {
@@ -54,41 +62,47 @@ gulp.task('sync', function() {
     // Set base directory of server to root folder
     server: { baseDir: './' },
     // Prevents browsers from opening automatically
-    open: false,
+    open: true,
     // Disable pop-over notification
     notify: true,
   })
-})
+});
+
+// Removed all files from destination folder before rebuild
+gulp.task('clean', function() {
+  return del('app/');
+});
 
 // Concatenates and minifies all js files
 gulp.task('scripts', function(){
-    gulp.src(config.src + 'js/main.js')
+  return gulp.src(config.src + 'js/main.js')
     .pipe(customPlumber('Error Running Scripts'))
     // Initialize sourcemaps
-    .pipe(maps.init())
+    .pipe(gulpIf(isProd == false, maps.init()))
     .pipe(include(includeSettings))
+    .pipe(gulpIf(isProd == true, uglify()))
     // Write sourcemaps
-    .pipe(maps.write())
+    .pipe(gulpIf(isProd == false, maps.write()))
     .pipe(gulp.dest(config.dest + 'js'))
     .pipe(notify({ message: 'Scripts Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
-  .pipe(sync.reload({ stream: true }))
+    .pipe(sync.reload({ stream: true }))
 });
 
 // Compile all sass into css
 gulp.task('sass', function() {
-  return gulp.src(config.src + 'scss/main.scss')
+  var sassOptions = { outputStyle: 'compressed' };
+  var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
+
+  return gulp.src(config.src + 'scss/**/*.scss')
     .pipe(customPlumber('Error Running Sass'))
     // Initialize sourcemaps
-    .pipe(maps.init())
-    .pipe(sass())
-    // Runs produced css through autoprefixer
-    .pipe(prefix({
-      // Add prefixes for IE8, IE9 and last 2 versions of all other browsers
-      browsers: ['> 1%', 'last 2 versions']
-    }))
+    .pipe(gulpIf(isProd == false, maps.init()))
+    .pipe(gulpIf(isProd == false, sass(), sass(sassOptions)))
+    // Add prefixes for IE8, IE9 and last 2 versions of all other browsers
+    .pipe(prefix(autoprefixerOptions))
     // Write sourcemaps
-    .pipe(maps.write())
+    .pipe(gulpIf(isProd == false, maps.write()))
     .pipe(gulp.dest(config.dest + 'css'))
     .pipe(notify({ message: 'Sass Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
@@ -98,41 +112,45 @@ gulp.task('sass', function() {
 // Compile all nunjucks logic into html
 gulp.task('nunjucks', function() {
   // Identify location of nunjucks partials
-  render.nunjucks.configure([config.src + 'templates/']);
+  //render.nunjucks.configure([config.src + 'templates/']);
+
+  render.nunjucks.configure(config.src);
 
   // Get all html and nunjucks files in pages
   return gulp.src(config.src + 'pages/**/*.+(html|nunjucks)')
     .pipe(customPlumber('Error Running Nunjucks'))
-    .pipe(render({data: {masterlayout: 'layout.nunjucks'}}))
+    .pipe(render({path: [config.src + 'templates/']}))
     .pipe(gulp.dest(''))
     .pipe(notify({ message: 'Nunjucks Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
     .pipe(sync.reload({ stream: true }))  
 });
 
-// Move all pdf files to app location
-gulp.task('pdf', function() {
-  // Identify location of nunjucks partials
-  //render.nunjucks.configure([config.src + 'templates/']);
-
-  // Get all html and nunjucks files in pages
-  return gulp.src(config.src + 'pages/**/*.pdf')
-    .pipe(customPlumber('Error Running PDF'))
-    //.pipe(render({data: {masterlayout: 'layout.nunjucks'}}))
-    .pipe(gulp.dest(''))
-    .pipe(notify({ message: 'PDFs Complete!', onLast: true }))
-    // Tells browser sync to reload files when task is done
-    .pipe(sync.reload({ stream: true }))  
-});
-
 // Minify all images
 gulp.task('images', function() {
+  var imageSettings = [
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]
+      })
+    ];
+
   return gulp.src(config.src + 'img/**/*')
-    .pipe(imagemin({
-        progressive: true
-    }))
+    .pipe(imagemin(imageSettings))
     .pipe(gulp.dest(config.dest + 'img'))
     .pipe(notify({ message: 'Images Complete!', onLast: true }))
+});
+
+// Move video files
+gulp.task('videos', function() {
+  return gulp.src(config.src + 'vid/*')    
+    .pipe(gulp.dest(config.dest + 'vid'))
+    .pipe(notify({ message: 'Videos Complete!', onLast: true }))
 });
 
 // Watch specified folders and files for any changes
@@ -142,11 +160,27 @@ gulp.task('watch', function(){
   gulp.watch(config.src + 'scss/**/*.scss', ['sass']);
   gulp.watch([
     config.src + 'templates/**/*.+(html|nunjucks)', 
-    config.src + 'pages/**/*.+(html|nunjucks)'], 
+    config.src + 'pages/**/*.+(html|nunjucks)',
+    config.src + 'data/data.json'],
     ['nunjucks']
   );
-  gulp.watch(config.src + 'pages/**/*.pdf', ['pdf']);
+});
+
+gulp.task('prod', function(callback) {
+  isProd = true;
+
+  sequence(
+    ['clean'],
+    ['videos', 'images'],
+    ['default'],
+    callback
+  )
 });
 
 // Executes a sequence of tasks
-gulp.task('default', ['images', 'scripts', 'sass', 'nunjucks', 'pdf', 'sync', 'watch']);
+gulp.task('default', function(callback) {
+  sequence(
+    ['scripts', 'sass', 'nunjucks'],
+    ['sync', 'watch']
+  )
+});

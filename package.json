@@ -23,21 +23,30 @@
   },
   "homepage": "https://github.com/PatrickPetrushonis/alumni.git#readme",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.26.7",
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-if": "^2.0.1",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-include": "^2.3.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-nunjucks-render": "^1.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "minimatch": "^3.0.2"
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-data": "^1.3.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-include": "^2.4.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-optipng": "^7.0.0",
+    "minimatch": "^3.0.4",
+    "run-sequence": "^2.2.1"
   },
+  "false": {},
   "dependencies": {
-    "node-sass": "^4.5.3"
+    "gulp-nunjucks-render": "^2.2.3",
+    "jquery": "^3.4.1",
+    "owl.carousel": "^2.3.4",
+    "tingle.js": "^0.13.2"
   }
 }
