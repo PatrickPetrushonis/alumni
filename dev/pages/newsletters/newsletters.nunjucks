@@ -13,100 +13,110 @@
 
 		<a class="button newsletter__button--main" href="{{ relative_path }}newsletters/{{ current_newsletter }}.pdf" target="_blank">Latest Newsletter</a>
 
+		<h2>2019 Newsletters</h2>
+
+		{{ global.newsletter('newsletter_2019-02.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+
+		<h2>2018 Newsletters</h2>
+
+		{{ global.newsletter('newsletter_2018-03.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+
 		<h2>2017 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2017-10.pdf', 'Fall') }}
 		{{ global.newsletter('javascript:void(0)', 'Spring') }}
+		{{ global.newsletter('newsletter_2017-10.pdf', 'Fall') }}
 
 		<h2>2016 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2016-10.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2016-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2016-10.pdf', 'Fall') }}
 
 		<h2>2015 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2015-12.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2015-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2015-12.pdf', 'Fall') }}
 
 		<h2>2014 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2014-8.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2014-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2014-8.pdf', 'Fall') }}
 
 		<h2>2013 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2013-8.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2013-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2013-8.pdf', 'Fall') }}
 
 		<h2>2012 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2012-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2012-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2012-9.pdf', 'Fall') }}
 
 		<h2>2011 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2011-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2011-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2011-9.pdf', 'Fall') }}
 
 		<h2>2010 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2010-8.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2010-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2010-8.pdf', 'Fall') }}
 
 		<h2>2009 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2009-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2009-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2009-9.pdf', 'Fall') }}
 
 		<h2>2008 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2008-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2008-3.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2008-9.pdf', 'Fall') }}
 
 		<h2>2007 Newsletters</h2>
 
-		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 		{{ global.newsletter('newsletter_2007-4.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 
 		<h2>2006 Newsletters</h2>
 
-		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 		{{ global.newsletter('newsletter_2006-3.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 
 		<h2>2005 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2005-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2005-4.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2005-9.pdf', 'Fall') }}
 
 		<h2>2004 Newsletters</h2>
 
-		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 		{{ global.newsletter('newsletter_2004-4.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 
 		<h2>2003 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2003-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2003-4.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2003-9.pdf', 'Fall') }}
 
 		<h2>2002 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2002-9.pdf', 'Fall') }}
 		{{ global.newsletter('newsletter_2002-4.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2002-9.pdf', 'Fall') }}
 
 		<h2>2001 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2001-9.pdf', 'Fall') }}
 		{{ global.newsletter('javascript:void(0)', 'Spring') }}
+		{{ global.newsletter('newsletter_2001-9.pdf', 'Fall') }}
 
 		<h2>2000 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_2000-9.pdf', 'Fall') }}
 		{{ global.newsletter('javascript:void(0)', 'Spring') }}
+		{{ global.newsletter('newsletter_2000-9.pdf', 'Fall') }}
 
 		<h2>1999 Newsletters</h2>
 
-		{{ global.newsletter('newsletter_1999-9.pdf', 'Fall') }}
 		{{ global.newsletter('javascript:void(0)', 'Spring') }}
+		{{ global.newsletter('newsletter_1999-9.pdf', 'Fall') }}
 
 	</div>
 
