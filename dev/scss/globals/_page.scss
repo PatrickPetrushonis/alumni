@@ -6,11 +6,12 @@
 }
 
 .main__content {
-	margin: 0 0 88px;
+	margin: 0;
+	padding: 0 0 88px;
 	width: 100%;
 
 	@include breakpoint($small-screen) {
-		margin: 0 0 88px $nav-width;
+		margin: 0 0 0 $nav-width;
 		width: calc(100% - #{$nav-width});
 	}
 }
