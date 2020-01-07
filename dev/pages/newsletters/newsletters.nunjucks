@@ -15,6 +15,11 @@
 
 		<h2>2019 Newsletters</h2>
 
+		{{ global.newsletter('newsletter_2020-01.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+
+		<h2>2019 Newsletters</h2>
+
 		{{ global.newsletter('newsletter_2019-02.pdf', 'Spring') }}
 		{{ global.newsletter('javascript:void(0)', 'Fall') }}
 
