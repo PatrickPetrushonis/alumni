@@ -18,6 +18,9 @@
   ],
   "author": "Patrick Petrushonis <pwp904@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=9.0.0 <10.0.0"
+  },
   "bugs": {
     "url": "https://github.com/PatrickPetrushonis/alumni.git/issues"
   },
