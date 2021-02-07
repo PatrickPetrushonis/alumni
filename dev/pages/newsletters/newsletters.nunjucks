@@ -13,7 +13,12 @@
 
 		<a class="button newsletter__button--main" href="{{ relative_path }}newsletters/{{ current_newsletter }}.pdf" target="_blank">Latest Newsletter</a>
 
-		<h2>2019 Newsletters</h2>
+		<h2>2021 Newsletters</h2>
+
+		{{ global.newsletter('newsletter_2021-01.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+
+		<h2>2020 Newsletters</h2>
 
 		{{ global.newsletter('newsletter_2020-01.pdf', 'Spring') }}
 		{{ global.newsletter('javascript:void(0)', 'Fall') }}
