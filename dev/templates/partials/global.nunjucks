@@ -26,6 +26,9 @@
   <li><a href="{{ rel_path }}bill_statement_2018.pdf" target="_blank">Bill Statement</a></li>
   <li><a href="{{ rel_path }}bylaws.pdf" target="_blank">Bylaws</a></li>
   <li><a href="{{ rel_path }}officers.html">Officers</a></li>
+  <hr>
+  <li><a href="{{ rel_path }}aa2/brochure.html">AA2 Brochure</a></li>
+  <li><a href="{{ rel_path }}aa2/officers.html">AA2 Officers</a></li>
 </ul>
 
 </div>
@@ -54,7 +57,7 @@
   <span class="card__officer--title">{{ position }}</span>
   <span class="card__officer--name">{{ name }}</span>
   <span class="card__officer--phone">{{ phone }}</span>
-  <a class="card__officer--email button" href="mailto:{{ email }}">{{ email }}</a>
+  {% if email %}<a class="card__officer--email button" href="mailto:{{ email }}">{{ email }}</a>{% endif %}
 </div>
 
 {% endmacro %}

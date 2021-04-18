@@ -15,7 +15,7 @@
 		{{ global.card__officer('President', 'Mary Toohey-Repko', '(203) 378-9783', 'mizmare@aol.com') }}
 		{{ global.card__officer('Vice-President', 'Cathy Nucera', '(203) 452-9618', 'cathy.nucera@gmail.com') }}
 		{{ global.card__officer('Secretary', 'Dorothy Connolly', '(203) 922-8022', 'dotconn0119@gmail.com') }}
-		{{ global.card__officer('Treasurer', 'Debi Petrushoni', '(203) 924-9175', 'debptreas@juno.com') }}
+		{{ global.card__officer('Treasurer', 'Debi Petrushonis', '(203) 924-9175', 'debptreas@juno.com') }}
 	</div>
 
 	<h2>Board Members</h2>
