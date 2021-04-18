@@ -27,7 +27,7 @@
   <li><a href="{{ rel_path }}bylaws.pdf" target="_blank">Bylaws</a></li>
   <li><a href="{{ rel_path }}officers.html">Officers</a></li>
   <hr>
-  <li><a href="{{ rel_path }}aa2/brochure.html">AA2 Brochure</a></li>
+  <li><a href="{{ rel_path }}aa2/mission_statement.html">AA2 Mission Statement</a></li>
   <li><a href="{{ rel_path }}aa2/officers.html">AA2 Officers</a></li>
 </ul>
 
