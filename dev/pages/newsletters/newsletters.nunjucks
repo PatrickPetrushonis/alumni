@@ -13,10 +13,20 @@
 
 		<a class="button newsletter__button--main" href="{{ relative_path }}newsletters/{{ current_newsletter }}.pdf" target="_blank">Latest Newsletter</a>
 
+		<h2>2025 Newsletters</h2>
+
+		{{ global.newsletter('newsletter_2025-01.pdf', 'Spring') }}
+		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+
+		<h2>2024 Newsletters</h2>
+
+		{{ global.newsletter('newsletter_2024-01.pdf', 'Spring') }}
+		{{ global.newsletter('newsletter_2024-03.pdf', 'Fall') }}
+
 		<h2>2023 Newsletters</h2>
 
 		{{ global.newsletter('newsletter_2023-01.pdf', 'Spring') }}
-		{{ global.newsletter('javascript:void(0)', 'Fall') }}
+		{{ global.newsletter('newsletter_2023-03.pdf', 'Fall') }}
 
 		<h2>2022 Newsletters</h2>
 

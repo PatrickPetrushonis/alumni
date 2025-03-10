@@ -1,5 +1,5 @@
 {% import '../templates/partials/global.nunjucks' as global %}
-{% set current_newsletter = "newsletter_2023-01" %}
+{% set current_newsletter = "newsletter_2025-01" %}
 
 <!DOCTYPE html>
 <html lang="en">

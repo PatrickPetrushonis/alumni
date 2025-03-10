@@ -33,7 +33,16 @@
 	</p>
 
 	<p>
-		For membership interest or questions, please call President Mary Toohey-Repko @ (203) 378-9783 or Treasurer Debi Petrushonis @ (203) 231-3306. You can also reach the alumni through our email addresses found on the <a href="{{ relative_path }}officers.html">Officers</a> page.
+		For membership interest or questions, please call:
+	</p>
+	<p>
+    <ul>
+      <li>(President) Mary Toohey-Repko @ 203-378-9783
+      <li>(Treasurer) Debi Petrushonis @ 203-231-3306
+    </ul>
+	</p>
+	<p>
+    You can also reach the alumni through our email addresses found on the <a href="{{ relative_path }}officers.html">Officers</a> page.
 	</p>
 
 
