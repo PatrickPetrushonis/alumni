@@ -13,7 +13,7 @@
 
 	<div class="card__container">
 		{{ global.card__officer('President', 'Mary Toohey-Repko', '(203) 378-9783', 'mizmare@aol.com') }}
-		{{ global.card__officer('Vice-President', 'Cathy Nucera', '(203) 452-9618', 'cathy.nucera@gmail.com') }}
+		{{ global.card__officer('Vice-President', 'Cathy Nucera', '(203) 449-6944', 'cathy.nucera@gmail.com') }}
 		{{ global.card__officer('Secretary', 'Dorothy Connolly', '(203) 922-8022', 'dotconn0119@gmail.com') }}
 		{{ global.card__officer('Treasurer', 'Debi Petrushonis', '(203) 231-3306', 'debp320@gmail.com') }}
 	</div>
@@ -24,7 +24,7 @@
 		{{ global.card__board('Edi Poidomani', '(203) 426-0833', 'edisr@sbcglobal.net') }}
 		{{ global.card__board('Caren Silhavey', '', 'silhavey@att.net') }}
 		{{ global.card__board('Beverly Tamas', '', '') }}
-		{{ global.card__board('Cynthia Kowalski', '', 'cindyk129@sbcglobal.net') }}
+		{{ global.card__board('Cynthia Kowalski', '', 'cindyk12964@yahoo.com') }}
 		{{ global.card__board('Linda Podolak', '', 'linda_podolak@yahoo.com') }}		
 	</div>
 
