@@ -29,8 +29,9 @@
   <li><a href="{{ rel_path }}bylaws.pdf" target="_blank">Bylaws</a></li>
   <li><a href="{{ rel_path }}officers.html">Officers</a></li>
   <hr>
-  <li><a href="{{ rel_path }}aa2/mission_statement.html">AA2 Mission Statement</a></li>
-  <li><a href="{{ rel_path }}aa2/officers.html">AA2 Officers</a></li>
+  <li><a href="{{ rel_path }}aaii/aaii_mission_statement.pdf" target="_blank">AAII Mission Statement</a></li>
+  <li><a href="{{ rel_path }}aaii/aaii_application.pdf" target="_blank">AAII Application</a></li>
+  <li><a href="{{ rel_path }}aaii/officers.html">AAII Officers</a></li>
 </ul>
 
 </div>

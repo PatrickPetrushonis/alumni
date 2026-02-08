@@ -1,0 +1,29 @@
+{% set pagename = "AAII Officers - BHSNAA1" %}
+{% set relative_path = "../" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+	<h1>AAII Officers</h1>
+
+	<hr>
+
+	<h2>Officers of the Board</h2>
+
+	<div class="card__container">
+		{{ global.card__officer('President', 'Edi Poidomani', '203-426-0833', 'edisr@sbcglobal.net') }}
+		{{ global.card__officer('Vice-President', 'Elizabeth Rosenberg', '203-745-7412', 'erosenberg62@gmail.com') }}
+		{{ global.card__officer('Secretary', 'Helen Pappano', '203-521-8691', 'helenpappano@sbcglobal.net') }}
+		{{ global.card__officer('Treasurer', 'Patricia Benigno', '203-494-5581', 'pjb170@yahoo.com') }}
+	</div>
+
+	<h2>Board Members</h2>
+
+	<div class="card__container">
+		{{ global.card__board('Margarite Parkhurst', '203-524-3090', 'angersmag@hotmail.com') }}
+		{{ global.card__board('Alison Kostopoulos', '203-218-1538', 'ajk62463@aol.com') }}
+		{{ global.card__board('Mary Toohey Repko', '203-378-9783', 'mizmare@aol.com') }}
+	</div>
+
+{% endblock %}

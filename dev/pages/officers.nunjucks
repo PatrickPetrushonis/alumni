@@ -23,7 +23,6 @@
 	<div class="card__container">
 		{{ global.card__board('Edi Poidomani', '(203) 426-0833', 'edisr@sbcglobal.net') }}
 		{{ global.card__board('Caren Silhavey', '', 'silhavey@att.net') }}
-		{{ global.card__board('Beverly Tamas', '', '') }}
 		{{ global.card__board('Cynthia Kowalski', '', 'cindyk12964@yahoo.com') }}
 		{{ global.card__board('Linda Podolak', '', 'linda_podolak@yahoo.com') }}		
 	</div>
