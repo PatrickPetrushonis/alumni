@@ -15,7 +15,7 @@
 		{{ global.card__officer('President', 'Edi Poidomani', '203-426-0833', 'edisr@sbcglobal.net') }}
 		{{ global.card__officer('Vice-President', 'Elizabeth Rosenberg', '203-745-7412', 'erosenberg62@gmail.com') }}
 		{{ global.card__officer('Secretary', 'Helen Pappano', '203-521-8691', 'helenpappano@sbcglobal.net') }}
-		{{ global.card__officer('Treasurer', 'Patricia Benigno', '203-494-5581', 'pjb170@yahoo.com') }}
+		{{ global.card__officer('Treasurer', 'Patricia Benigno', '203-494-5581', 'pjb9170@yahoo.com') }}
 	</div>
 
 	<h2>Board Members</h2>
