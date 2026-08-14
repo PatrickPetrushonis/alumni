@@ -1,0 +1,134 @@
+{
+  "index": {
+    "pagename": "Bridgeport Hospital School of Nursing Alumnae Association I",
+    "heading": "Bridgeport Hospital School of Nursing Alumnae Association 1, Inc.",
+    "intro": [
+      [
+        { "text": "The Bridgeport Hospital School of Nursing Alumnae Association I", "bold": true },
+        { "text": " (BHSNAA1) has been in existence since 1897 and incorporated in 1906. Graduates who successfully complete their educational requirements at the school are eligible for membership in this professional organization. Membership requires completion of an " },
+        { "text": "application", "href": "/application_for_AA1.pdf" },
+        { "text": ", accompanied by payment of the Association's annual dues of ten dollars. Our Treasurer bills for renewal of membership in January of each year." }
+      ]
+    ],
+    "purposeIntro": "BHSNAA1 is committed to maintain a strong alumni network, excellence in nursing care, education, and service to our communities. This corporation is devoted to charitable, educational, and scientific purposes including:",
+    "purposes": [
+      "Enhancing the nursing profession by supporting the high standards of education, dedication, and performance",
+      "Encouraging education and learning by providing scholarships for nursing education, sponsoring lectures and programs for our members",
+      "Promoting mutual benefit and loyalty among the members by virtue of their association together",
+      "Receiving donations and bequests to be used for our corporate purposes",
+      "Assisting in the betterment of the functions and services of Bridgeport Hospital"
+    ],
+    "meetingParagraph": [
+      { "text": "Per our " },
+      { "text": "bylaws", "href": "/bylaws.pdf" },
+      { "text": ", this Association meets once a year, in the spring in April. Announcement of this meetings is made through our " },
+      { "text": "newsletter", "href": "@currentNewsletter" },
+      { "text": ", which is sent to all our active membership by mail or email. This dinner meeting consists of a business session and an educational program, presented by a professional speaker who educates the attendees regarding a current topic of interest and concern to Nurses. CEU programs have been offered at our meetings." }
+    ],
+    "scholarshipParagraph": "This Association offers Continuing Education Scholarships to current Alumni Members interested in pursuing a higher degree in the field of Nursing. These are current members who are pursuing a BSN, MSN, or Doctorate Degree in Nursing and who meet the established guidelines as stated on our application form. The award amount is based on the alumni need and annual financial status of the Association.",
+    "contactIntro": "For membership interest or questions, please call:",
+    "contacts": [
+      "(President) Mary Toohey-Repko @ 203-378-9783",
+      "(Treasurer) Debi Petrushonis @ 203-231-3306"
+    ],
+    "closingParagraph": [
+      { "text": "You can also reach the alumni through our email addresses found on the " },
+      { "text": "Officers", "href": "/officers", "external": false },
+      { "text": " page." }
+    ]
+  },
+
+  "news": {
+    "pagename": "News - BHSNAA1",
+    "heading": "News",
+    "sections": [
+      {
+        "heading": "News from the Nursing Almanac 2016",
+        "image": { "src": "/img/nursing_schools_almanac_2016.png", "alt": "Nursing Schools Almanac 2016" },
+        "paragraphs": [
+          "Great news for the Bridgeport Hospital School of Nursing. They are being recognized by the Nursing Schools Almanac 2016 ranking BHSN as one of the best nursing school.",
+          "BHSN is being ranked as one of the top nursing programs; even in our rank of #31 - all schools before us are universities with multiple advanced programs and there is no other 2 year program ahead of us in the New England States and only one in the US ranking of all vocational 2-year programs (approx. 1900 and we're #2). This is outstanding and Alumnae Members should be proud. Many thanks to our faculty and staff at BHSN."
+        ]
+      }
+    ]
+  },
+
+  "notFound": {
+    "pagename": "404 - BHSNAA1",
+    "heading": "Error 404",
+    "message": "Uh oh, looks like you took a wrong turn.",
+    "buttonText": "Try going here",
+    "buttonHref": "/"
+  },
+
+  "officers": {
+    "aa1": {
+      "pagename": "Officers - BHSNAA1",
+      "title": "Officers",
+      "officers": [
+        { "position": "President", "name": "Mary Toohey-Repko", "phone": "(203) 378-9783", "email": "mizmare@aol.com" },
+        { "position": "Vice-President", "name": "Cathy Nucera", "phone": "(203) 449-6944", "email": "cathy.nucera@gmail.com" },
+        { "position": "Secretary", "name": "Dorothy Connolly", "phone": "(203) 922-8022", "email": "dotconn0119@gmail.com" },
+        { "position": "Treasurer", "name": "Debi Petrushonis", "phone": "(203) 231-3306", "email": "debp320@gmail.com" }
+      ],
+      "board": [
+        { "name": "Edi Poidomani", "phone": "(203) 426-0833", "email": "edisr@sbcglobal.net" },
+        { "name": "Caren Silhavey", "phone": "", "email": "silhavey@att.net" },
+        { "name": "Cynthia Kowalski", "phone": "", "email": "cindyk12964@yahoo.com" },
+        { "name": "Linda Podolak", "phone": "", "email": "linda_podolak@yahoo.com" }
+      ]
+    },
+    "aaii": {
+      "pagename": "AAII Officers - BHSNAA1",
+      "title": "AAII Officers",
+      "mailto": "BHSNAA2@gmail.com",
+      "officers": [
+        { "position": "President", "name": "Edi Poidomani", "phone": "203-426-0833", "email": "edisr@sbcglobal.net" },
+        { "position": "Vice-President", "name": "Elizabeth Rosenberg", "phone": "203-745-7412", "email": "erosenberg62@gmail.com" },
+        { "position": "Secretary", "name": "Helen Pappano", "phone": "203-521-8691", "email": "helenpappano@sbcglobal.net" },
+        { "position": "Treasurer", "name": "Patricia Benigno", "phone": "203-494-5581", "email": "pjb9170@yahoo.com" }
+      ],
+      "board": [
+        { "name": "Margarite Parkhurst", "phone": "203-524-3090", "email": "angersmag@hotmail.com" },
+        { "name": "Alison Kostopoulos", "phone": "203-218-1538", "email": "ajk62463@aol.com" },
+        { "name": "Mary Toohey Repko", "phone": "203-378-9783", "email": "mizmare@aol.com" }
+      ]
+    }
+  },
+
+  "newsletters": {
+    "pagename": "Newsletters - BHSNAA1",
+    "heading": "Newsletters",
+    "current": "newsletter_2026-03",
+    "archive": [
+      { "year": 2026, "spring": "newsletter_2026-01.pdf", "fall": "newsletter_2026-03.pdf" },
+      { "year": 2025, "spring": "newsletter_2025-01.pdf", "fall": "newsletter_2025-03.pdf" },
+      { "year": 2024, "spring": "newsletter_2024-01.pdf", "fall": "newsletter_2024-03.pdf" },
+      { "year": 2023, "spring": "newsletter_2023-01.pdf", "fall": "newsletter_2023-03.pdf" },
+      { "year": 2022, "spring": "newsletter_2022-01.pdf", "fall": "newsletter_2022-03.pdf" },
+      { "year": 2021, "spring": "newsletter_2021-01.pdf", "fall": "newsletter_2021-03.pdf" },
+      { "year": 2020, "spring": "newsletter_2020-01.pdf", "fall": null },
+      { "year": 2019, "spring": "newsletter_2019-02.pdf", "fall": null },
+      { "year": 2018, "spring": "newsletter_2018-03.pdf", "fall": null },
+      { "year": 2017, "spring": null, "fall": "newsletter_2017-10.pdf" },
+      { "year": 2016, "spring": "newsletter_2016-3.pdf", "fall": "newsletter_2016-10.pdf" },
+      { "year": 2015, "spring": "newsletter_2015-3.pdf", "fall": "newsletter_2015-12.pdf" },
+      { "year": 2014, "spring": "newsletter_2014-3.pdf", "fall": "newsletter_2014-8.pdf" },
+      { "year": 2013, "spring": "newsletter_2013-3.pdf", "fall": "newsletter_2013-8.pdf" },
+      { "year": 2012, "spring": "newsletter_2012-3.pdf", "fall": "newsletter_2012-9.pdf" },
+      { "year": 2011, "spring": "newsletter_2011-3.pdf", "fall": "newsletter_2011-9.pdf" },
+      { "year": 2010, "spring": "newsletter_2010-3.pdf", "fall": "newsletter_2010-8.pdf" },
+      { "year": 2009, "spring": "newsletter_2009-3.pdf", "fall": "newsletter_2009-9.pdf" },
+      { "year": 2008, "spring": "newsletter_2008-3.pdf", "fall": "newsletter_2008-9.pdf" },
+      { "year": 2007, "spring": "newsletter_2007-4.pdf", "fall": null },
+      { "year": 2006, "spring": "newsletter_2006-3.pdf", "fall": null },
+      { "year": 2005, "spring": "newsletter_2005-4.pdf", "fall": "newsletter_2005-9.pdf" },
+      { "year": 2004, "spring": "newsletter_2004-4.pdf", "fall": null },
+      { "year": 2003, "spring": "newsletter_2003-4.pdf", "fall": "newsletter_2003-9.pdf" },
+      { "year": 2002, "spring": "newsletter_2002-4.pdf", "fall": "newsletter_2002-9.pdf" },
+      { "year": 2001, "spring": null, "fall": "newsletter_2001-9.pdf" },
+      { "year": 2000, "spring": null, "fall": "newsletter_2000-9.pdf" },
+      { "year": 1999, "spring": null, "fall": "newsletter_1999-9.pdf" }
+    ]
+  }
+}

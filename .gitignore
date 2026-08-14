@@ -1,8 +1,46 @@
-# Node files installed via npm commands
-node_modules
+# Dependencies
+node_modules/
 
-# Bower files installed via bower commands
-bower_components
+# Build output (only when deploying with gh-pages branch)
+dist
 
-# Debug log on npm errors
-npm-debug.log
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage
+.nyc_output
+
+# Cache directories
+.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Vite
+vite.config.ts.timestamp-*
+
+# Optional
+.npm
+.yarn-integrity

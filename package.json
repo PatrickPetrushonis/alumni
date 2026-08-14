@@ -1,55 +1,36 @@
 {
-  "name": "alumni-website",
-  "version": "1.0.0",
-  "description": "Website for bridgport hospital school of nursing alumni",
-  "main": "index.html",
+  "name": "alumni",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "gulp"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "type-check": "tsc --noEmit",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PatrickPetrushonis/alumni.git"
-  },
-  "keywords": [
-    "web",
-    "gulp",
-    "sass",
-    "nunjucks"
-  ],
-  "author": "Patrick Petrushonis <pwp904@gmail.com>",
-  "license": "MIT",
-  "engines": {
-    "node": ">=9.0.0 <10.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/PatrickPetrushonis/alumni.git/issues"
-  },
-  "homepage": "https://github.com/PatrickPetrushonis/alumni.git#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^3.0.0",
-    "fs": "0.0.1-security",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-clean-css": "^3.10.0",
-    "gulp-data": "^1.3.1",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-include": "^2.4.1",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "imagemin-optipng": "^7.0.0",
-    "minimatch": "^3.0.4",
-    "run-sequence": "^2.2.1"
-  },
-  "false": {},
   "dependencies": {
-    "gulp-nunjucks-render": "^2.2.3",
-    "jquery": "^3.4.1",
-    "owl.carousel": "^2.3.4",
-    "tingle.js": "^0.13.2"
-  }
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
+    "oxlint": "^1.75.0",
+    "sass": "^1.83.0",
+    "typescript": "~6.0.2",
+    "vite": "7.3.6"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 5%",
+    "Firefox ESR"
+  ]
 }

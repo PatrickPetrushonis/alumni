@@ -1,0 +1,7 @@
+@use 'functions' as *;
+@use 'variables' as *;
+
+// Mobile first breakpoint
+@mixin breakpoint($point) {
+	@media screen and (min-width: $point) { @content; }
+}

@@ -1,0 +1,18 @@
+@use '../utilities' as *;
+
+.newsletter__container {
+	text-align: center;
+
+	.newsletter__button--main,
+	.newsletter__button--fall,
+	.newsletter__button--spring {
+		margin: 0 0 22px;
+		min-width: 100px;
+		text-align: center;
+	}
+
+	@include breakpoint($small-screen) {		
+		.newsletter__button--fall { margin-left: 5.5px; }
+		.newsletter__button--spring { margin-right: 5.5px; }
+	}
+}
